@@ -4,7 +4,7 @@ body, html {
     height: 100%;
     font-family: CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif), sans-serif;
     display: flex;
-    flex-direction: column; /* Ensure a column layout */
+    flex-direction: column;
 }
 
 #container {
@@ -12,13 +12,13 @@ body, html {
 }
 
 #content {
-    background: linear-gradient(to bottom, #3f3f3f, #000000); /* Gradient from gray to black */
+    background: linear-gradient(to bottom, #3f3f3f, #000000);
     color: #ffffff;
     text-align: center;
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Set to -1 to place it behind other elements */
+    z-index: -1;
 }
 
 #sidebar {
@@ -31,7 +31,6 @@ body, html {
     position: relative;
     padding-bottom: 10px;
 }
-
 
 #sidebar #logo {
     max-height: 5.5vh;
@@ -138,13 +137,11 @@ nav a:hover {
     align-items: center;
 }
 
-
 .footer-text {
     display: flex;
     flex-direction: column;
     margin-right: 15px;
 }
-
 
 .like {
     margin: 10px;
