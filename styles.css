@@ -9,6 +9,7 @@ body, html {
 
 #container {
     display: flex;
+    flex-wrap: wrap;
 }
 
 #content {
@@ -22,14 +23,14 @@ body, html {
 }
 
 #sidebar {
-    width: 250px;
+    width: 16%;
     background-color: #000000;
     color: #ffffff;
     padding: 20px;
-    padding-left: 10px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     position: relative;
     padding-bottom: 10px;
+    padding-left: 10px;
 }
 
 #sidebar #logo {
@@ -125,7 +126,7 @@ nav a:hover {
 .footer {
     background-color: #181818;
     color: #ffffff;
-    height: 145px;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -178,6 +179,47 @@ nav a:hover {
 
 .footer-bar {
     width: 100%;
-    height: 27px;
+    height: 1%;
     background-color: #1ed760;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    #sidebar {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .first-list,
+    .second-list,
+    .third-list {
+        margin-top: 20px;
+    }
+
+    .first-list a,
+    .second-list a,
+    .third-list a {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .install-app {
+        margin-top: 30px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    .player {
+    max-height: 35px;
+    margin-right: 3px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center
+    }
 }
